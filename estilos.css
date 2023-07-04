@@ -1,0 +1,94 @@
+#header{
+	margin: 100px;
+	width: 100%;
+	font-family: Georgia, Cambria, Times, "Times New Roman";
+}
+h1{
+
+	color: black;
+	margin: 40px;
+	text-align: center;x
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.nav{
+	width: 100%;
+	margin-bottom: 30px;
+	align-content: center;
+	align-items: center;
+}
+
+.nav li a{
+	background-color: #FF7433;
+	color: #ffff;
+	text-decoration: none;
+	padding: 10px 100px;
+	display: block;
+
+}
+
+.nav > li{
+	float: left;
+}
+
+.nav li a:hover{
+	background-color: #E0ABCE;
+}
+
+.nav li ul{
+	display: none;
+	position: abolute;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li:hover{
+	background-color: #EEEE0D;
+}
+.slider-frame {
+	width: 650px;
+    height: auto;
+	margin:100px auto 0;
+	overflow: hidden;
+	border-color: 5px solid #fff;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 250%;
+	
+	animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
